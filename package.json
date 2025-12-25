@@ -1,0 +1,42 @@
+{
+  "name": "clueso-clone",
+  "version": "1.0.0",
+  "description": "A clone of Clueso - AI-powered video creation platform",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon server/index.js",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "install-deps": "npm install && cd client && npm install",
+    "start": "node server/index.js"
+  },
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "@ffprobe-installer/ffprobe": "^2.1.2",
+    "cohere-ai": "^7.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "espeak-ng": "^1.0.2",
+    "express": "^4.18.2",
+    "ffmpeg": "^0.0.4",
+    "fluent-ffmpeg": "^2.1.2",
+    "google-tts-api": "^2.0.2",
+    "multer": "^1.4.5-lts.1",
+    "socket.io": "^4.7.4",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.0.2"
+  },
+  "keywords": [
+    "video",
+    "ai",
+    "documentation",
+    "clueso",
+    "clone"
+  ],
+  "author": "",
+  "license": "MIT"
+}
